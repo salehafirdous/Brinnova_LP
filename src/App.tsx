@@ -119,7 +119,7 @@ function App() {
             <Phone size={18} fill="white" />
             <span>Call Now</span>
           </button>
-          <button className="btn btn-whatsapp">
+          <button className="btn btn-whatsapp" onClick={() => window.open('https://wa.me/919100555511', '_blank')}>
             {whatsappSvg}
             <span>WhatsApp Us</span>
           </button>
