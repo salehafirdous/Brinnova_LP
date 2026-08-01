@@ -321,9 +321,11 @@ body {
   padding: 1vh 2vw;
   display: flex;
   align-items: center;
+  justify-content: center;
   gap: 2vw;
   color: white;
-  font-size: 1.45vh;
+  font-size: min(1.45vh, 3.5vw);
+  cursor: pointer;
 }
 
 .phone-circle {
@@ -338,9 +340,9 @@ body {
 }
 
 .long-cta span {
-  flex-grow: 1;
   text-align: center;
   letter-spacing: 0.2px;
+  white-space: nowrap;
 }
 
 .long-cta strong {

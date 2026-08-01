@@ -27,6 +27,30 @@ const DotMatrix = () => (
   </div>
 );
 
+const LogoO = () => (
+  <svg 
+    viewBox="0 0 24 24" 
+    style={{ 
+      height: '0.82em', 
+      width: '0.82em', 
+      display: 'inline-block', 
+      verticalAlign: 'baseline', 
+      margin: '0 0.04em',
+      transform: 'translateY(0.05em)'
+    }}
+    fill="none"
+    stroke="#e86524"
+    strokeWidth="2.5"
+    strokeLinecap="round"
+    strokeLinejoin="round"
+  >
+    {/* Outer Heart */}
+    <path d="M12 21.5c-1.5-1.5-8-6.5-8-12a4.5 4.5 0 0 1 8-3 4.5 4.5 0 0 1 8 3c0 5.5-6.5 10.5-8 12z" />
+    {/* Inner Heart */}
+    <path d="M12 15.5c-1-1-4-3.5-4-6a2.5 2.5 0 0 1 4.5-1.5A2.5 2.5 0 0 1 16 9.5c0 2.5-3 5-4 6z" strokeWidth="2" />
+  </svg>
+);
+
 function App() {
   return (
     <div className="container">
@@ -35,7 +59,7 @@ function App() {
       <header className="header">
         <div className="logo-section">
           <div className="logo">
-            <span className="brinnova">Brinnova</span>
+            <span className="brinnova">Brinn<LogoO />va</span>
             <div className="logo-subtitle">
               TRANSITIONAL CARE <span className="dot-sep">•</span> REHAB <span className="dot-sep">•</span> PHYSIO
             </div>
@@ -115,7 +139,7 @@ function App() {
       {/* Footer / CTA */}
       <div className="cta-section">
         <div className="buttons-row">
-          <button className="btn btn-call">
+          <button className="btn btn-call" onClick={() => window.location.href = 'tel:09100555511'}>
             <Phone size={18} fill="white" />
             <span>Call Now</span>
           </button>
@@ -125,7 +149,7 @@ function App() {
           </button>
         </div>
 
-        <div className="long-cta">
+        <div className="long-cta" onClick={() => window.location.href = 'tel:09100555511'}>
           <div className="phone-circle">
             <Phone size={16} fill="#0b3469" color="#0b3469" />
           </div>
