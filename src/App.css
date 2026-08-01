@@ -1,0 +1,360 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: 'Inter', sans-serif;
+  background-color: #f0f0f0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  width: 100vw;
+  overflow: hidden;
+}
+
+.container {
+  width: 100vw;
+  max-width: 600px;
+  height: 100vh;
+  height: 100dvh;
+  background-color: #ffffff;
+  display: flex;
+  flex-direction: column;
+  position: relative;
+  overflow: hidden;
+  box-shadow: 0 0 20px rgba(0, 0, 0, 0.1);
+  border: 2px solid #0b3469;
+  border-radius: 16px;
+}
+
+@media (min-height: 500px) {
+  .container {
+    height: 98vh;
+    max-height: 98vh;
+  }
+}
+
+/* 1. Header Info (Logo + Headline) */
+.header {
+  padding: 1.5vh 4vw 0 4vw;
+  display: flex;
+  flex-direction: column;
+  flex-shrink: 0;
+}
+
+.logo-section {
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-start;
+  margin-bottom: 1.5vh;
+}
+
+.logo {
+  display: flex;
+  flex-direction: column;
+}
+
+.brinnova {
+  font-family: 'Poppins', sans-serif;
+  color: #0b3469;
+  /* Navy blue */
+  font-size: 3.2vh;
+  font-weight: 800;
+  line-height: 1;
+  letter-spacing: -1px;
+}
+
+.logo-subtitle {
+  font-size: 1vh;
+  font-weight: 700;
+  color: #e86524;
+  margin-top: 0.5vh;
+  letter-spacing: 0.5px;
+}
+
+.orange-text {
+  color: #e86524;
+}
+
+.navy-text {
+  color: #0b3469;
+}
+
+.dot-matrix {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 4px;
+  margin-top: 0.8vh;
+}
+
+.dot {
+  width: 6px;
+  height: 6px;
+  background-color: #e86524;
+  border-radius: 50%;
+}
+
+.hero-text-section {
+  text-align: center;
+  margin-bottom: 1vh;
+}
+
+.hero-title {
+  font-size: 2.6vh;
+  line-height: 1.15;
+  font-weight: 800;
+}
+
+.divider-container {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-top: 1vh;
+  gap: 1vw;
+}
+
+.divider-line {
+  height: 1px;
+  width: 6vw;
+  background-color: #e86524;
+}
+
+.heart-icon {
+  color: #e86524;
+}
+
+/* 2. Hero Image */
+.hero-image-container {
+  position: relative;
+  width: 100%;
+  flex-grow: 1;
+  min-height: 20vh;
+  flex-shrink: 1;
+}
+
+.hero-image-wrapper {
+  position: relative;
+  width: 100%;
+  height: 100%;
+  overflow: hidden;
+}
+
+.hero-img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  object-position: center 30%;
+}
+
+/* The curved bottom overlays */
+.swoosh-overlay {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  width: 100%;
+  height: 25px;
+  background: #e86524;
+  border-radius: 50% 50% 0 0 / 100% 100% 0 0;
+  transform: translateY(12px) scale(1.1);
+  z-index: 1;
+}
+
+.curve-overlay {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  width: 100%;
+  height: 35px;
+  background: #0b3469;
+  border-radius: 50% 50% 0 0 / 100% 100% 0 0;
+  transform: translateY(12px) scaleX(1.1);
+  z-index: 2;
+}
+
+.hero-image-container::after {
+  content: '';
+  position: absolute;
+  bottom: -15px;
+  left: -5%;
+  width: 110%;
+  height: 40px;
+  background: #ffffff;
+  border-radius: 50% 50% 0 0 / 100% 100% 0 0;
+  z-index: 3;
+}
+
+/* 3. Description Section */
+.description-section {
+  padding: 1vh 5vw;
+  text-align: center;
+  background-color: #ffffff;
+  flex-shrink: 0;
+  z-index: 4;
+}
+
+.description-section p {
+  color: #0b3469;
+  font-size: 1.5vh;
+  line-height: 1.4;
+  font-weight: 500;
+}
+
+/* 4. Conditions Section */
+.conditions-section {
+  flex-grow: 1;
+  display: flex;
+  flex-direction: column;
+  background-color: #ffffff;
+  padding: 0 4vw;
+}
+
+.conditions-title-container {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 2vw;
+  margin-bottom: 1.5vh;
+}
+
+.conditions-line {
+  height: 2px;
+  width: 8vw;
+  background-color: #e86524;
+}
+
+.conditions-title {
+  color: #0b3469;
+  font-size: 2vh;
+  font-weight: 700;
+}
+
+.conditions-grid {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  grid-template-rows: repeat(2, 1fr);
+  gap: 1vh 1vw;
+  flex-grow: 1;
+  padding-bottom: 1vh;
+}
+
+.condition-item {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: flex-start;
+  text-align: center;
+}
+
+.condition-icon-circle {
+  width: 5.5vh;
+  height: 5.5vh;
+  border-radius: 50%;
+  background-color: white;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  box-shadow: 0 2px 8px rgba(11, 52, 105, 0.08);
+  margin-bottom: 0.6vh;
+  color: #0b3469;
+}
+
+.condition-icon-circle svg {
+  width: 2.5vh;
+  height: 2.5vh;
+}
+
+.condition-label {
+  font-size: 1.1vh;
+  color: #0b3469;
+  font-weight: 600;
+  white-space: pre-line;
+  line-height: 1.2;
+}
+
+/* 5. Footer / CTA Section */
+.cta-section {
+  padding: 1vh 3vw 1.5vh 3vw;
+  background-color: #ffffff;
+  display: flex;
+  flex-direction: column;
+  gap: 1vh;
+  flex-shrink: 0;
+}
+
+.buttons-row {
+  display: flex;
+  gap: 6px;
+}
+
+.btn {
+  flex: 1;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 1.5vw;
+  padding: 1.2vh 0;
+  border: none;
+  border-radius: 8px;
+  color: white;
+  font-weight: 600;
+  font-size: 1.6vh;
+  cursor: pointer;
+}
+
+.btn-call {
+  background-color: #e86524;
+}
+
+.btn-whatsapp {
+  background-color: #25d366;
+}
+
+.long-cta {
+  background-color: #0b3469;
+  border-radius: 8px;
+  padding: 1vh 2vw;
+  display: flex;
+  align-items: center;
+  gap: 2vw;
+  color: white;
+  font-size: 1.45vh;
+}
+
+.phone-circle {
+  width: 3vh;
+  height: 3vh;
+  background-color: #ffffff;
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-shrink: 0;
+}
+
+.long-cta span {
+  flex-grow: 1;
+  text-align: center;
+  letter-spacing: 0.2px;
+}
+
+.long-cta strong {
+  color: #e86524;
+}
+
+.footer-bar {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 1vw;
+  color: #0b3469;
+  font-size: 1vh;
+  font-weight: 500;
+  margin-top: 0.5vh;
+}
+
+.shield-icon {
+  color: #0b3469;
+}
