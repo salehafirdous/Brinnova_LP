@@ -349,7 +349,7 @@ body {
 .long-cta span {
   text-align: center;
   letter-spacing: 0.2px;
-  white-space: normal;
+  white-space: nowrap;
   line-height: 1.2;
   font-weight: 700;
 }
