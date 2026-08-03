@@ -162,7 +162,7 @@ body {
   width: 100%;
   height: 100%;
   object-fit: cover;
-  object-position: center 65%;
+  object-position: center 8%;
   filter: brightness(1.05) contrast(1.02);
 }
 
@@ -291,7 +291,7 @@ body {
   border-radius: 8px;
   color: white;
   font-weight: 700;
-  font-size: 1.5vh;
+  font-size: min(1.8vh, 4vw);
   cursor: pointer;
 }
 
@@ -330,7 +330,7 @@ body {
   justify-content: center;
   gap: 1.5vw;
   color: white;
-  font-size: min(1.4vh, 2.8vw);
+  font-size: min(1.6vh, 3.5vw);
   cursor: pointer;
   animation: popHighlight 2.5s infinite ease-in-out;
 }
@@ -351,7 +351,7 @@ body {
   letter-spacing: 0.2px;
   white-space: normal;
   line-height: 1.2;
-  font-weight: 500;
+  font-weight: 700;
 }
 
 .long-cta strong {
