@@ -2,15 +2,36 @@ import React from 'react';
 import { Phone, ShieldCheck, Heart } from 'lucide-react';
 import { TbBrain, TbWheelchair, TbBone, TbActivity, TbWalk, TbFirstAidKit, TbLungs, TbMessageCircle } from "react-icons/tb";
 
+const OrthoIcon = () => (
+  <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="1" strokeLinecap="round" strokeLinejoin="round" width="100%" height="100%">
+    <path d="M9 3v6a3 3 0 0 0 3 3h0a3 3 0 0 1 3 3v6" />
+    <circle cx="12" cy="12" r="3.5" />
+  </svg>
+);
+
+const NeuroIcon = () => (
+  <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="1" strokeLinecap="round" strokeLinejoin="round" width="100%" height="100%">
+    <path d="M12 4a6 6 0 0 1 6 6c0 2.2-1 4-2 6a3 3 0 0 0-1.5 2.5V21H9v-2.5A3 3 0 0 0 7.5 16c-1-2-2-3.8-2-6a6 6 0 0 1 6.5-6z" />
+    <path d="M10.5 9.5l3 2-1.5 3-3-2z" />
+  </svg>
+);
+
+const SpeechIcon = () => (
+  <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="1" strokeLinecap="round" strokeLinejoin="round" width="100%" height="100%">
+    <path d="M11 4a6 6 0 0 1 6 6c0 2.2-1 4-2 6a3 3 0 0 0-1.5 2.5V21H8v-2.5A3 3 0 0 0 6.5 16c-1-2-2-3.8-2-6a6 6 0 0 1 6.5-6z" />
+    <path d="M18 10a4 4 0 0 1 0 4M21 8a8 8 0 0 1 0 8" />
+  </svg>
+);
+
 const icons = {
   stroke: <TbBrain strokeWidth={1} />,
   paralysis: <TbWheelchair strokeWidth={1} />,
-  ortho: <TbBone strokeWidth={1} />,
-  neuro: <TbActivity strokeWidth={1} />,
+  ortho: <OrthoIcon />,
+  neuro: <NeuroIcon />,
   geriatric: <TbWalk strokeWidth={1} />,
   polytrauma: <TbFirstAidKit strokeWidth={1} />,
   respiratory: <TbLungs strokeWidth={1} />,
-  speech: <TbMessageCircle strokeWidth={1} />
+  speech: <SpeechIcon />
 };
 
 const whatsappSvg = (
@@ -42,33 +63,24 @@ function App() {
 
         <div className="hero-text-section">
           <h1 className="hero-title">
-            <div style={{ whiteSpace: 'nowrap', fontSize: 'min(3.6vh, 5.2vw)' }}>
-              <span className="navy-text">Comprehensive </span>
-              <span className="orange-text">Rehabilitation Care</span>
-            </div>
-            <div className="navy-text" style={{ fontSize: 'min(3.6vh, 4.8vw)' }}>
-              For Every Stage of Recovery
-            </div>
+            <div className="navy-text title-line-1">Comprehensive</div>
+            <div className="orange-text title-line-2">Rehabilitation Care</div>
+            <div className="navy-text title-line-3">For Every Stage of Recovery</div>
           </h1>
-          <div className="divider-container">
-            <div className="divider-line"></div>
-            <Heart size={14} className="heart-icon" />
-            <div className="divider-line"></div>
-          </div>
         </div>
       </header>
 
       {/* Hero Image */}
       <div className="hero-image-container">
         <div className="hero-image-wrapper">
-          <img src="/hero-landscape-new.png" alt="Rehabilitation Care" className="hero-img" />
-          <svg className="curve-svg" viewBox="0 0 1000 150" preserveAspectRatio="none" style={{ position: 'absolute', bottom: '-1px', left: 0, width: '100%', height: '35%', zIndex: 10 }}>
-            {/* Orange tapers into the blue */}
-            <path d="M0,0 Q200,60 500,80 L500,150 L0,150 Z" fill="#f6921e" />
+          <img src="/hero-landscape-speech.png" alt="Rehabilitation Care" className="hero-img" />
+          <svg className="curve-svg" viewBox="0 0 1000 110" preserveAspectRatio="none" style={{ position: 'absolute', bottom: '-1px', left: 0, width: '100%', height: '18%', zIndex: 10 }}>
+            {/* Orange band (behind blue) */}
+            <path d="M0,35 Q300,130 1000,60 L1000,110 L0,110 Z" fill="#f6921e" />
             {/* Blue sweeps down and up on the right */}
-            <path d="M0,25 Q400,120 1000,0 L1000,150 L0,150 Z" fill="#026fa6" />
+            <path d="M0,55 Q450,130 1000,20 L1000,110 L0,110 Z" fill="#026fa6" />
             {/* White forms the bottom mask */}
-            <path d="M0,50 Q400,145 1000,25 L1000,150 L0,150 Z" fill="#ffffff" />
+            <path d="M0,80 Q450,150 1000,45 L1000,110 L0,110 Z" fill="#ffffff" />
           </svg>
         </div>
       </div>
