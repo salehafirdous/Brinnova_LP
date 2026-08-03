@@ -3,14 +3,14 @@ import { Phone, ShieldCheck, Heart } from 'lucide-react';
 import { TbBrain, TbWheelchair, TbBone, TbActivity, TbWalk, TbFirstAidKit, TbLungs, TbMessageCircle } from "react-icons/tb";
 
 const icons = {
-  stroke: <TbBrain strokeWidth={1.2} />,
-  paralysis: <TbWheelchair strokeWidth={1.2} />,
-  ortho: <TbBone strokeWidth={1.2} />,
-  neuro: <TbActivity strokeWidth={1.2} />,
-  geriatric: <TbWalk strokeWidth={1.2} />,
-  polytrauma: <TbFirstAidKit strokeWidth={1.2} />,
-  respiratory: <TbLungs strokeWidth={1.2} />,
-  speech: <TbMessageCircle strokeWidth={1.2} />
+  stroke: <TbBrain strokeWidth={1} />,
+  paralysis: <TbWheelchair strokeWidth={1} />,
+  ortho: <TbBone strokeWidth={1} />,
+  neuro: <TbActivity strokeWidth={1} />,
+  geriatric: <TbWalk strokeWidth={1} />,
+  polytrauma: <TbFirstAidKit strokeWidth={1} />,
+  respiratory: <TbLungs strokeWidth={1} />,
+  speech: <TbMessageCircle strokeWidth={1} />
 };
 
 const whatsappSvg = (
@@ -27,30 +27,6 @@ const DotMatrix = () => (
   </div>
 );
 
-const LogoO = () => (
-  <svg 
-    viewBox="0 0 24 24" 
-    style={{ 
-      height: '0.82em', 
-      width: '0.82em', 
-      display: 'inline-block', 
-      verticalAlign: 'baseline', 
-      margin: '0 0.04em',
-      transform: 'translateY(0.05em)'
-    }}
-    fill="none"
-    stroke="#e86524"
-    strokeWidth="2.5"
-    strokeLinecap="round"
-    strokeLinejoin="round"
-  >
-    {/* Outer Heart */}
-    <path d="M12 21.5c-1.5-1.5-8-6.5-8-12a4.5 4.5 0 0 1 8-3 4.5 4.5 0 0 1 8 3c0 5.5-6.5 10.5-8 12z" />
-    {/* Inner Heart */}
-    <path d="M12 15.5c-1-1-4-3.5-4-6a2.5 2.5 0 0 1 4.5-1.5A2.5 2.5 0 0 1 16 9.5c0 2.5-3 5-4 6z" strokeWidth="2" />
-  </svg>
-);
-
 function App() {
   return (
     <div className="container">
@@ -59,19 +35,20 @@ function App() {
       <header className="header">
         <div className="logo-section">
           <div className="logo">
-            <span className="brinnova">Brinn<LogoO />va</span>
-            <div className="logo-subtitle">
-              TRANSITIONAL CARE <span className="dot-sep">•</span> REHAB <span className="dot-sep">•</span> PHYSIO
-            </div>
+            <img src="/logo.png" alt="Brinnova Transitional Care" className="logo-image" />
           </div>
           <DotMatrix />
         </div>
 
         <div className="hero-text-section">
           <h1 className="hero-title">
-            <span className="navy-text">Comprehensive</span><br />
-            <span className="orange-text">Rehabilitation Care</span><br />
-            <span className="navy-text">For Every Stage of Recovery</span>
+            <div style={{ whiteSpace: 'nowrap', fontSize: 'min(3.6vh, 5.2vw)' }}>
+              <span className="navy-text">Comprehensive </span>
+              <span className="orange-text">Rehabilitation Care</span>
+            </div>
+            <div className="navy-text" style={{ fontSize: 'min(3.6vh, 4.8vw)' }}>
+              For Every Stage of Recovery
+            </div>
           </h1>
           <div className="divider-container">
             <div className="divider-line"></div>
@@ -84,12 +61,12 @@ function App() {
       {/* Hero Image */}
       <div className="hero-image-container">
         <div className="hero-image-wrapper">
-          <img src="/hero-landscape.png" alt="Rehabilitation Care" className="hero-img" />
+          <img src="/hero-landscape-new.png" alt="Rehabilitation Care" className="hero-img" />
           <svg className="curve-svg" viewBox="0 0 1000 150" preserveAspectRatio="none" style={{ position: 'absolute', bottom: '-1px', left: 0, width: '100%', height: '35%', zIndex: 10 }}>
             {/* Orange tapers into the blue */}
-            <path d="M0,0 Q200,60 500,80 L500,150 L0,150 Z" fill="#e86524" />
+            <path d="M0,0 Q200,60 500,80 L500,150 L0,150 Z" fill="#f6921e" />
             {/* Blue sweeps down and up on the right */}
-            <path d="M0,25 Q400,120 1000,0 L1000,150 L0,150 Z" fill="#0b3469" />
+            <path d="M0,25 Q400,120 1000,0 L1000,150 L0,150 Z" fill="#026fa6" />
             {/* White forms the bottom mask */}
             <path d="M0,50 Q400,145 1000,25 L1000,150 L0,150 Z" fill="#ffffff" />
           </svg>
@@ -139,19 +116,19 @@ function App() {
       {/* Footer / CTA */}
       <div className="cta-section">
         <div className="buttons-row">
-          <button className="btn btn-call" onClick={() => window.location.href = 'tel:09100555511'}>
-            <Phone size={18} fill="white" />
-            <span>Call Now</span>
-          </button>
           <button className="btn btn-whatsapp" onClick={() => window.open('https://wa.me/919100555511', '_blank')}>
             {whatsappSvg}
             <span>WhatsApp Us</span>
+          </button>
+          <button className="btn btn-call" onClick={() => window.location.href = 'tel:09100555511'}>
+            <Phone size={18} fill="white" />
+            <span>Call Now</span>
           </button>
         </div>
 
         <div className="long-cta" onClick={() => window.location.href = 'tel:09100555511'}>
           <div className="phone-circle">
-            <Phone size={16} fill="#0b3469" color="#0b3469" />
+            <Phone size={16} fill="#026fa6" color="#026fa6" />
           </div>
           <span>Call us to Book an Appointment worth <strong>Rs. 2,000 FREE</strong></span>
         </div>

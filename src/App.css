@@ -27,7 +27,7 @@ body {
   position: relative;
   overflow: hidden;
   box-shadow: 0 0 20px rgba(0, 0, 0, 0.1);
-  border: 2px solid #0b3469;
+  border: 2px solid #026fa6;
   border-radius: 16px;
 }
 
@@ -60,30 +60,17 @@ body {
   flex-direction: column;
 }
 
-.brinnova {
-  font-family: 'Poppins', sans-serif;
-  color: #0b3469;
-  /* Navy blue */
-  font-size: 3.2vh;
-  font-weight: 800;
-  line-height: 1;
-  letter-spacing: -1px;
-}
-
-.logo-subtitle {
-  font-size: 1vh;
-  font-weight: 700;
-  color: #e86524;
-  margin-top: 0.5vh;
-  letter-spacing: 0.5px;
+.logo-image {
+  height: 6vh;
+  object-fit: contain;
 }
 
 .orange-text {
-  color: #e86524;
+  color: #f6921e;
 }
 
 .navy-text {
-  color: #0b3469;
+  color: #026fa6;
 }
 
 .dot-matrix {
@@ -96,7 +83,7 @@ body {
 .dot {
   width: 6px;
   height: 6px;
-  background-color: #e86524;
+  background-color: #f6921e;
   border-radius: 50%;
 }
 
@@ -106,9 +93,10 @@ body {
 }
 
 .hero-title {
-  font-size: 2.6vh;
+  font-size: 3.6vh;
   line-height: 1.15;
-  font-weight: 800;
+  font-weight: 900;
+  letter-spacing: -1px;
 }
 
 .divider-container {
@@ -122,11 +110,11 @@ body {
 .divider-line {
   height: 1px;
   width: 6vw;
-  background-color: #e86524;
+  background-color: #f6921e;
 }
 
 .heart-icon {
-  color: #e86524;
+  color: #f6921e;
 }
 
 /* 2. Hero Image */
@@ -149,7 +137,9 @@ body {
   width: 100%;
   height: 100%;
   object-fit: cover;
-  object-position: center center;
+  object-position: center 50%;
+  -webkit-mask-image: linear-gradient(to bottom, transparent 0%, black 20%, black 100%);
+  mask-image: linear-gradient(to bottom, transparent 0%, black 20%, black 100%);
 }
 
 /* The curved bottom overlays */
@@ -159,7 +149,7 @@ body {
   left: 0;
   width: 100%;
   height: 25px;
-  background: #e86524;
+  background: #f6921e;
   border-radius: 50% 50% 0 0 / 100% 100% 0 0;
   transform: translateY(12px) scale(1.1);
   z-index: 1;
@@ -171,7 +161,7 @@ body {
   left: 0;
   width: 100%;
   height: 35px;
-  background: #0b3469;
+  background: #026fa6;
   border-radius: 50% 50% 0 0 / 100% 100% 0 0;
   transform: translateY(12px) scaleX(1.1);
   z-index: 2;
@@ -191,7 +181,7 @@ body {
 
 /* 3. Description Section */
 .description-section {
-  padding: 1vh 5vw;
+  padding: 1vh 1vw;
   text-align: center;
   background-color: #ffffff;
   flex-shrink: 0;
@@ -199,9 +189,9 @@ body {
 }
 
 .description-section p {
-  color: #0b3469;
-  font-size: 1.5vh;
-  line-height: 1.4;
+  color: #026fa6;
+  font-size: 1.7vh;
+  line-height: 1.35;
   font-weight: 500;
 }
 
@@ -224,14 +214,14 @@ body {
 
 .conditions-line {
   height: 2px;
-  width: 8vw;
-  background-color: #e86524;
+  width: 30px;
+  background-color: #f6921e;
 }
 
 .conditions-title {
-  color: #0b3469;
+  color: #026fa6;
   font-size: 2vh;
-  font-weight: 700;
+  font-weight: 800;
 }
 
 .conditions-grid {
@@ -252,26 +242,27 @@ body {
 }
 
 .condition-icon-circle {
-  width: 5.5vh;
-  height: 5.5vh;
+  width: 6.5vh;
+  height: 6.5vh;
   border-radius: 50%;
-  background-color: white;
+  background-color: #f4f8fb;
+  border: 1.5px solid #026fa6;
   display: flex;
   align-items: center;
   justify-content: center;
-  box-shadow: 0 2px 8px rgba(11, 52, 105, 0.08);
-  margin-bottom: 0.6vh;
-  color: #0b3469;
+  box-shadow: 0 2px 10px rgba(11, 52, 105, 0.05);
+  margin-bottom: 1vh;
+  color: #026fa6;
 }
 
 .condition-icon-circle svg {
-  width: 2.5vh;
-  height: 2.5vh;
+  width: 3.2vh;
+  height: 3.2vh;
 }
 
 .condition-label {
   font-size: 1.1vh;
-  color: #0b3469;
+  color: #026fa6;
   font-weight: 600;
   white-space: pre-line;
   line-height: 1.2;
@@ -279,11 +270,11 @@ body {
 
 /* 5. Footer / CTA Section */
 .cta-section {
-  padding: 1vh 3vw 1.5vh 3vw;
+  padding: 0.5vh 3vw 1vh 3vw;
   background-color: #ffffff;
   display: flex;
   flex-direction: column;
-  gap: 1vh;
+  gap: 0.8vh;
   flex-shrink: 0;
 }
 
@@ -298,34 +289,53 @@ body {
   align-items: center;
   justify-content: center;
   gap: 1.5vw;
-  padding: 1.2vh 0;
+  padding: 1vh 0;
   border: none;
   border-radius: 8px;
   color: white;
   font-weight: 600;
-  font-size: 1.6vh;
+  font-size: 1.5vh;
   cursor: pointer;
 }
 
 .btn-call {
-  background-color: #e86524;
+  background-color: #f6921e;
 }
 
 .btn-whatsapp {
   background-color: #25d366;
 }
 
+@keyframes popHighlight {
+  0% {
+    box-shadow: 0 2px 5px 0 rgba(246, 146, 30, 0.4);
+    transform: scale(1);
+  }
+
+  50% {
+    box-shadow: 0 6px 20px 8px rgba(246, 146, 30, 0.4);
+    transform: scale(1.03);
+  }
+
+  100% {
+    box-shadow: 0 2px 5px 0 rgba(246, 146, 30, 0.4);
+    transform: scale(1);
+  }
+}
+
 .long-cta {
-  background-color: #0b3469;
+  background-color: #026fa6;
+  border: none;
   border-radius: 8px;
-  padding: 1vh 2vw;
+  padding: 0.8vh 2vw;
   display: flex;
   align-items: center;
   justify-content: center;
   gap: 2vw;
   color: white;
-  font-size: min(1.45vh, 3.5vw);
+  font-size: min(1.4vh, 3.5vw);
   cursor: pointer;
+  animation: popHighlight 2.5s infinite ease-in-out;
 }
 
 .phone-circle {
@@ -346,7 +356,7 @@ body {
 }
 
 .long-cta strong {
-  color: #e86524;
+  color: #f6921e;
 }
 
 .footer-bar {
@@ -354,12 +364,12 @@ body {
   align-items: center;
   justify-content: center;
   gap: 1vw;
-  color: #0b3469;
-  font-size: 1vh;
-  font-weight: 500;
+  color: #026fa6;
+  font-size: min(1.3vh, 3vw);
+  font-weight: 600;
   margin-top: 0.5vh;
 }
 
 .shield-icon {
-  color: #0b3469;
+  color: #026fa6;
 }
