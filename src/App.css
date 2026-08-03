@@ -20,7 +20,6 @@ body {
 .container {
   width: 100vw;
   max-width: 600px;
-  container-type: inline-size;
   height: 100vh;
   height: 100dvh;
   background-color: #ffffff;
@@ -44,7 +43,7 @@ body {
 
 /* 1. Header Info (Logo + Headline) */
 .header {
-  padding: 0.5vh 4cqi 0 4cqi;
+  padding: 0.5vh 4vw 0 4vw;
   display: flex;
   flex-direction: column;
   flex-shrink: 0;
@@ -103,21 +102,21 @@ body {
 }
 
 .title-line-1 {
-  font-size: min(4.5vh, 6.5cqi);
+  font-size: min(4.5vh, 6.5vw);
   line-height: 1.1;
   font-weight: 800;
   letter-spacing: -1px;
 }
 
 .title-line-2 {
-  font-size: min(5vh, 7cqi);
+  font-size: min(5vh, 7vw);
   line-height: 1.05;
   font-weight: 900;
   letter-spacing: -1.5px;
 }
 
 .title-line-3 {
-  font-size: min(3vh, 4.5cqi);
+  font-size: min(3vh, 4.5vw);
   line-height: 1.2;
   font-weight: 700;
   margin-top: 0.5vh;
@@ -128,12 +127,12 @@ body {
   align-items: center;
   justify-content: center;
   margin-top: 1vh;
-  gap: 1cqi;
+  gap: 1vw;
 }
 
 .divider-line {
   height: 1px;
-  width: 6cqi;
+  width: 6vw;
   background-color: #f6921e;
 }
 
@@ -171,7 +170,7 @@ body {
 
 /* 3. Description Section */
 .description-section {
-  padding: 1vh 1cqi;
+  padding: 1vh 1vw;
   text-align: center;
   background-color: #ffffff;
   flex-shrink: 0;
@@ -180,13 +179,12 @@ body {
 
 .description-section p {
   color: #026fa6;
-  font-size: min(1.8vh, 3.8cqi);
+  font-size: min(1.8vh, 3.8vw);
   line-height: 1.6;
   font-weight: 500;
-  padding: 0 5cqi;
+  padding: 0 5vw;
   margin: 0 auto;
   max-width: 600px;
-  container-type: inline-size;
 }
 
 /* 4. Conditions Section */
@@ -195,14 +193,14 @@ body {
   display: flex;
   flex-direction: column;
   background-color: #ffffff;
-  padding: 0 4cqi;
+  padding: 0 4vw;
 }
 
 .conditions-title-container {
   display: flex;
   align-items: center;
   justify-content: center;
-  gap: 2cqi;
+  gap: 2vw;
   margin-bottom: 1.5vh;
 }
 
@@ -222,7 +220,7 @@ body {
   display: grid;
   grid-template-columns: repeat(4, 1fr);
   grid-template-rows: repeat(2, 1fr);
-  gap: 1vh 1cqi;
+  gap: 1vh 1vw;
   flex-grow: 1;
   padding-bottom: 1vh;
 }
@@ -269,7 +267,7 @@ body {
 
 /* 5. Footer / CTA Section */
 .cta-section {
-  padding: 0.5vh 3cqi 1vh 3cqi;
+  padding: 0.5vh 3vw 1vh 3vw;
   background-color: #ffffff;
   display: flex;
   flex-direction: column;
@@ -287,7 +285,7 @@ body {
   display: flex;
   align-items: center;
   justify-content: center;
-  gap: 1.5cqi;
+  gap: 1.5vw;
   padding: 1vh 0;
   border: none;
   border-radius: 8px;
@@ -326,13 +324,13 @@ body {
   background-color: #026fa6;
   border: none;
   border-radius: 8px;
-  padding: 0.8vh 2cqi;
+  padding: 0.8vh 2vw;
   display: flex;
   align-items: center;
   justify-content: center;
-  gap: 1.5cqi;
+  gap: 1.5vw;
   color: white;
-  font-size: min(1.4vh, 2.8cqi);
+  font-size: min(1.4vh, 2.8vw);
   cursor: pointer;
   animation: popHighlight 2.5s infinite ease-in-out;
 }
@@ -366,9 +364,9 @@ body {
   display: flex;
   align-items: center;
   justify-content: center;
-  gap: 1cqi;
+  gap: 1vw;
   color: #026fa6;
-  font-size: min(1.3vh, 3cqi);
+  font-size: min(1.3vh, 3vw);
   font-weight: 600;
   margin-top: 0.5vh;
 }
