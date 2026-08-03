@@ -148,7 +148,7 @@ function App() {
       {/* Description */}
       <div className="description-section">
         <p>
-          At Brinnova Care, we deliver personalized rehabilitation
+          At Brinnova Care, we deliver personalised rehabilitation
           programs for a wide range of conditions. Our expert
           team focuses on restoring independence, improving
           mobility and enhancing quality of life with compassion
@@ -207,7 +207,7 @@ function App() {
 
         <div className="footer-bar">
           <ShieldCheck size={14} className="shield-icon" />
-          <span>Expert Care. Personalized Recovery. Better Outcomes.</span>
+          <span>Expert Care. personalised Recovery. Better Outcomes.</span>
         </div>
       </div>
 
