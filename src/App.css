@@ -330,7 +330,7 @@ body {
   justify-content: center;
   gap: 1.5vw;
   color: white;
-  font-size: min(1.6vh, 3.5vw);
+  font-size: min(1.6vh, 2.9vw);
   cursor: pointer;
   animation: popHighlight 2.5s infinite ease-in-out;
 }
