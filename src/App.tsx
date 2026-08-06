@@ -1,14 +1,14 @@
 import React from 'react';
 import { Phone, ShieldCheck, Heart } from 'lucide-react';
 const StrokeIcon = () => (
-  <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="1.2" strokeLinecap="round" strokeLinejoin="round" width="100%" height="100%">
+  <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="1.5" strokeLinecap="round" strokeLinejoin="round" width="100%" height="100%">
     <path d="M12 4c-3 0-5 2-5 4.5 0 .5-.1 1-.2 1.5A3.5 3.5 0 0 0 5 14c0 2 1.5 3 3 3 .5 0 1 .1 1.5.2A4.5 4.5 0 0 0 14 15.5M12 4c3 0 5 2 5 4.5 0 .5.1 1 .2 1.5A3.5 3.5 0 0 1 19 14c0 2-1.5 3-3 3-.5 0-1 .1-1.5.2A4.5 4.5 0 0 1 10 15.5" />
     <g><path d="M13 3l-3 7h4l-3 8" /></g>
   </svg>
 );
 
 const ParalysisIcon = () => (
-  <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="1.2" strokeLinecap="round" strokeLinejoin="round" width="100%" height="100%">
+  <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="1.5" strokeLinecap="round" strokeLinejoin="round" width="100%" height="100%">
     <path d="M9 11h4a2 2 0 0 1 2 2v3" />
     <path d="M11 7.5a1.5 1.5 0 1 0 0-3 1.5 1.5 0 0 0 0 3z" />
     <path d="M15 16h3.5" />
@@ -19,7 +19,7 @@ const ParalysisIcon = () => (
 );
 
 const OrthoIcon = () => (
-  <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="1.2" strokeLinecap="round" strokeLinejoin="round" width="100%" height="100%">
+  <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="1.5" strokeLinecap="round" strokeLinejoin="round" width="100%" height="100%">
     <path d="M9 3c0 4 2 6 2 9s-2 5-2 9" />
     <path d="M15 3c0 4-2 6-2 9s2 5 2 9" />
     <g><circle cx="12" cy="12" r="3" /></g>
@@ -27,7 +27,7 @@ const OrthoIcon = () => (
 );
 
 const NeuroIcon = () => (
-  <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="1.2" strokeLinecap="round" strokeLinejoin="round" width="100%" height="100%">
+  <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="1.5" strokeLinecap="round" strokeLinejoin="round" width="100%" height="100%">
     <path d="M13 4a6 6 0 0 1 6 6c0 2.2-1 4-2 6a3 3 0 0 0-1.5 2.5V21h-5v-2.5A3 3 0 0 0 8.5 16c-1-2-2-3.8-2-6a6 6 0 0 1 6.5-6z" />
     <g>
       <path d="M12.5 7l3 1.5v3l-3 1.5-3-1.5v-3z" />
@@ -38,7 +38,7 @@ const NeuroIcon = () => (
 );
 
 const GeriatricIcon = () => (
-  <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="1.2" strokeLinecap="round" strokeLinejoin="round" width="100%" height="100%">
+  <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="1.5" strokeLinecap="round" strokeLinejoin="round" width="100%" height="100%">
     <path d="M10 6a2 2 0 1 0 0-4 2 2 0 0 0 0 4z" />
     <path d="M10 6c-1 3-3 5-3 8v7" />
     <path d="M10 6c2 1 4 1 5 3v6" />
@@ -51,7 +51,7 @@ const GeriatricIcon = () => (
 );
 
 const PolytraumaIcon = () => (
-  <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="1.2" strokeLinecap="round" strokeLinejoin="round" width="100%" height="100%">
+  <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="1.5" strokeLinecap="round" strokeLinejoin="round" width="100%" height="100%">
     <path d="M12 9a4 4 0 1 0 0-8 4 4 0 0 0 0 8z" />
     <path d="M5 21v-3a5 5 0 0 1 5-5h4a5 5 0 0 1 5 5v3" />
     <g>
@@ -62,7 +62,7 @@ const PolytraumaIcon = () => (
 );
 
 const RespiratoryIcon = () => (
-  <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="1.2" strokeLinecap="round" strokeLinejoin="round" width="100%" height="100%">
+  <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="1.5" strokeLinecap="round" strokeLinejoin="round" width="100%" height="100%">
     <path d="M12 3v5" />
     <path d="M12 8l-2 2" />
     <path d="M12 8l2 2" />
@@ -75,7 +75,7 @@ const RespiratoryIcon = () => (
 );
 
 const SpeechIcon = () => (
-  <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="1.2" strokeLinecap="round" strokeLinejoin="round" width="100%" height="100%">
+  <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="1.5" strokeLinecap="round" strokeLinejoin="round" width="100%" height="100%">
     <path d="M11 4a6 6 0 0 1 6 6c0 2.2-1 4-2 6a3 3 0 0 0-1.5 2.5V21H8v-2.5A3 3 0 0 0 6.5 16c-1-2-2-3.8-2-6a6 6 0 0 1 6.5-6z" />
     <g>
       <path d="M18 10a4 4 0 0 1 0 4M21 8a8 8 0 0 1 0 8" />
